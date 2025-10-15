@@ -70,6 +70,16 @@ const { width: screenWidth } = Dimensions.get("window");
 export default function HomeScreen() {
   const { t } = useTranslation();
   const { userData } = useReferral();
+  
+  // Safety check for userData
+  if (!userData) {
+    return (
+      <View style={[styles.container, { justifyContent: "center", alignItems: "center" }]}>
+        <ActivityIndicator size="large" color={Colors.primary.accent} />
+        <Text style={{ marginTop: 16, color: Colors.text.primary }}>Loading...</Text>
+      </View>
+    );
+  }
   const { categories, getTotalVisibleFolderCount } = useCategories();
   const { getItem, setItem } = useStorage();
   const { tier, getRemainingUsage } = useMembership();
@@ -155,7 +165,7 @@ export default function HomeScreen() {
         // Check if we've already shown the first-time modal
         try {
           const hasShown = await getItem('@coolplay_first_time_modal_shown');
-          if (!hasShown && !userData.hasUsedReferralCode) {
+          if (!hasShown && !userData?.hasUsedReferralCode) {
             const timer = setTimeout(() => {
               setShowReferralModal(true);
               setHasShownFirstTimeModal(true);
@@ -659,7 +669,7 @@ export default function HomeScreen() {
           </View>
           <View style={styles.statCard}>
             <Sparkles size={24} color={Colors.primary.accent} />
-            <Text style={styles.statNumber}>{userData.voiceCredits}</Text>
+            <Text style={styles.statNumber}>{userData?.voiceCredits || 0}</Text>
             <Text style={styles.statLabel}>{t("voice_commands")}</Text>
           </View>
         </View>
