@@ -1,0 +1,5 @@
+CoolPlayPreview 自動化啟動包
+版本: 1.0.0
+創建日期: Wed Oct 15 08:13:45 CST 2025
+相容性: Expo SDK 50+, Node.js 16+
+支援平台: macOS, Linux
