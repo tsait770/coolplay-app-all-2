@@ -7,7 +7,9 @@
     "start-web": "bunx rork start -p z9gb9iocah9kftnpfahko --web --tunnel",
     "start-web-dev": "DEBUG=expo* bunx rork start -p z9gb9iocah9kftnpfahko --web --tunnel",
     "lint": "expo lint",
-    "sync-admin-password": "../scripts/sync-admin-password.sh"
+    "sync-admin-password": "../scripts/sync-admin-password.sh",
+    "sync-github": "./coolplay-app-all-2/sync-to-github.sh",
+    "sync": "./coolplay-app-all-2/sync-to-github.sh"
   },
   "dependencies": {
     "@expo/vector-icons": "^15.0.2",
