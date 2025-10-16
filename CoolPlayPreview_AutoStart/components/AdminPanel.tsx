@@ -31,7 +31,7 @@ export default function AdminPanel({ visible, onClose }: AdminPanelProps) {
   const [copiedCode, setCopiedCode] = useState('');
 
   // Admin authentication (in production, this would be server-side)
-  const ADMIN_PASSWORD = 'ADMIN2025SECRET';
+  const ADMIN_PASSWORD = '680142';
 
   const handleAuthenticate = () => {
     if (adminPassword === ADMIN_PASSWORD) {

@@ -31,7 +31,7 @@ export default function AdminPanel({ visible, onClose }: AdminPanelProps) {
   const [copiedCode, setCopiedCode] = useState('');
 
   // Admin authentication (in production, this would be server-side)
-  const ADMIN_PASSWORD = 'ADMIN2025SECRET';
+  const ADMIN_PASSWORD = '680142';
 
   const handleAuthenticate = () => {
     if (adminPassword.trim() === ADMIN_PASSWORD) {
@@ -39,7 +39,7 @@ export default function AdminPanel({ visible, onClose }: AdminPanelProps) {
       setAdminPassword('');
     } else {
       if (Platform.OS === 'web') {
-        console.error('Invalid admin password. Expected: ADMIN2025SECRET');
+        console.error('Invalid admin password. Expected: 680142');
       } else {
         Alert.alert('Access Denied', 'Invalid admin password. Please check your input and try again.');
       }
