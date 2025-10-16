@@ -231,6 +231,9 @@
   "toggle_subtitle": "切換字幕",
   "next_video": "下一部影片",
   "previous_video": "上一部影片",
+  "referral_code_management": "推薦碼管理",
+  "open_referral_code_management": "開啟推薦碼管理",
+  "referral_code_management_description": "管理和查看推薦碼系統，包括用戶碼、促銷碼和管理員碼的統計與設定。",
   "loop_video": "循環播放",
   "pip_mode": "子母畫面",
   "cast_to_device": "投放到裝置",
@@ -596,5 +599,8 @@
   "normal_speed": "正常速度",
   "speed_2_0": "兩倍速度",
   "next_video": "下一部影片",
-  "previous_video": "上一部影片"
+  "previous_video": "上一部影片",
+  "referral_code_management": "推薦碼管理",
+  "open_referral_code_management": "開啟推薦碼管理",
+  "referral_code_management_description": "管理和查看推薦碼系統，包括用戶碼、促銷碼和管理員碼的統計與設定。"
 }
